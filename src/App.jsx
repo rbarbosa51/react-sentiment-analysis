@@ -2,7 +2,6 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-lime-50 to-red-50 text-black/60">
       <div
-        ref={modal}
         className="mod absolute hidden rounded-lg border-[2px] border-solid border-black/60 bg-white p-16 text-5xl"
       >
         Please wait...
