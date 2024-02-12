@@ -12,7 +12,6 @@
   #root {
     @apply h-screen;
   }
-  
 }
 @layer utilities {
   .mod {

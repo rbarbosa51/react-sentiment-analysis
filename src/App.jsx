@@ -5,23 +5,28 @@ env.allowLocalModels = false;
 env.useBrowserCache = false;
 
 function App() {
-  const [textInput, setTextInput] = useState("")
+  const [textInput, setTextInput] = useState("");
   const [sentiment, setSentiment] = useState("Placeholder");
   const [score, setScore] = useState("Placeholder");
-  const modal = useRef(null)
+  const modal = useRef(null);
 
   const handleInput = async () => {
-    modal.current.classList.toggle('hidden')
-    const pipe = await pipeline('sentiment-analysis');
+    modal.current.classList.toggle("hidden");
+    const pipe = await pipeline("sentiment-analysis");
     const out = await pipe(textInput);
-    setSentiment(out[0].label)
-    setScore(out[0].score)
-    modal.current.classList.toggle('hidden')
-  }
+    setSentiment(out[0].label);
+    setScore(out[0].score);
+    modal.current.classList.toggle("hidden");
+  };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-lime-50 to-red-50 text-black/60 relative">
-      <div ref={modal} className="mod hidden absolute p-16 text-5xl rounded-lg bg-white border-[2px] border-solid border-black/60">Please wait...</div>
+    <div className="relative min-h-screen bg-gradient-to-b from-lime-50 to-red-50 text-black/60">
+      <div
+        ref={modal}
+        className="mod absolute hidden rounded-lg border-[2px] border-solid border-black/60 bg-white p-16 text-5xl"
+      >
+        Please wait...
+      </div>
       <h1 className="bg-transparent pt-4 text-center  text-5xl">
         Sentiment Analysis
       </h1>
@@ -38,7 +43,8 @@ function App() {
           rows="5"
           onChange={(e) => setTextInput(e.target.value)}
         ></textarea>
-        <button className="rounded-lg bg-red-100 p-2 font-semibold duration-100 hover:scale-125"
+        <button
+          className="rounded-lg bg-red-100 p-2 font-semibold duration-100 hover:scale-125"
           onClick={handleInput}
         >
           Analyse
