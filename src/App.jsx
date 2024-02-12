@@ -16,7 +16,7 @@ function App() {
           cols="30"
           rows="5"
         ></textarea>
-        <button className="rounded-lg bg-red-100 p-2 font-semibold duration-500 hover:scale-125">
+        <button className="rounded-lg bg-red-100 p-2 font-semibold duration-100 hover:scale-125">
           Analyse
         </button>
       </div>
