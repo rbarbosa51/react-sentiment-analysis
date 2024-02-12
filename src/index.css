@@ -12,4 +12,12 @@
   #root {
     @apply h-screen;
   }
+  
+}
+@layer utilities {
+  .mod {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
