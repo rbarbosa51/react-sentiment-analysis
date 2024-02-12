@@ -1,8 +1,7 @@
-# React + Vite
+# React Sentiment Analysis Tutorial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+These are the starter and finished files for the tutorial:
 
-Currently, two official plugins are available:
+[Tutorial](https://www.linkedin.com/pulse/react-sentiment-analysis-tutorial-rafael-barbosa-vmarc/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The main branch provides the starter code and the Finished branch is the finished code.
